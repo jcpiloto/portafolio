@@ -1,0 +1,13 @@
+body{background: gray;margin: 0}
+div{box-sizing: border-box;}
+header{background:whitesmoke;padding: 10px;}
+header h1{margin: 0;}
+div.caja{background: white;margin-top: 12px;}
+div.caja img{width: 45%;margin-left: 25%}
+div.caja .caja-header div:first-child{display: inline-block;
+    width:80%;}
+div.caja .caja-header div:last-child{display: inline-block;
+    width:20%;text-align: right;padding: 10px;color: gray;}
+div.caja h2{padding: 8px;margin:0;}
+div.caja p{padding: 8px;margin: 0;}
+div.cuadro{width: 600px;margin: auto;}

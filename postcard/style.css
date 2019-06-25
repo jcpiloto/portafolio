@@ -1,0 +1,16 @@
+body{background-color: black;font-size: 19px;font-family: 'Handlee', cursive;}
+    .marco{background:white; width: 500px; height: 300px; margin: auto;
+        position: absolute; top:30%; left:50%; transform: translate(-50%, -50%);padding: 15px;}
+    .arriba{overflow:hidden;}
+    .arriba img{max-width: 90px; float: right;}    
+    .nitad{ overflow: hidden;}
+    input{font-size: 18px;font-family: 'Handlee', cursive;} 
+    .marco h1{margin:0;}
+    .mitadizquierda{float: left;width: 50%;}
+    .mitaddercha{float: right;width: 50%;}
+    .mitaddercha input{display: block;}
+    h1{font-size: 44px;}
+    .abajo{padding: 10px; text-align: center;}
+    .abajo input[type=submit]{border:none ;border-bottom:1px solid gray; }
+    .mitad input[type=text]{border:none;border-bottom: 1px solid gray;
+        font-family: 'Handlee', cursive;width: 240px; margin-bottom: 10px; padding: 5px;}
