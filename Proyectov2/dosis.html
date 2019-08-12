@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/64706993c1.js"></script>
+    <title>Control de Dósis de TOE</title>
+</head>
+<body>
+
+    <div class="container fondo">
+
+        <div class="signup-form-container">
+        
+             <!-- form start -->
+             <form role="form" id="register-form" autocomplete="off">
+             
+             <div class="form-header">
+                    <br>
+                    <div class="container">
+                          <nav class="navbar navbar-expand-lg btn btn-info">
+                            <a class="navbar-brand" href="#"></a>
+                            <h3 class="form-title"><i class="fas fa-user-shield"></i>Control de dósis de TOE</h3>
+                          </nav>
+                    </div>
+                    <br>
+                        
+             </div>
+             <div class="container">
+             <div class="form-body">
+                <div class="form-group">
+                    <div class="input-group">
+                    <div class="input-group-addon"><span class="glyphicon glyphicon-user"></span></div>
+                    <input name="cedula" type="number" class="form-control" placeholder="Introduzca cédula de identidad a consultar">
+                    <button type="submit" class="btn btn-info">
+                        <span class="glyphicon glyphicon-log-in"></span> Consultar
+                    </button>
+                    </div>
+                    <span class="help-block" id="error"></span>
+               </div>     
+
+               <div class="form-group">
+                    <div class="input-group">
+                    <div class="input-group-addon"><span class="glyphicon glyphicon-user"></span></div>
+                    <input name="name" type="text" class="form-control" placeholder="Nombre y Apellido">
+                    </div>
+                    <span class="help-block" id="error"></span>
+             </div>
+                       
+             <div class="form-group">
+                 <div class="input-group">
+                 <div class="input-group-addon"><span class="glyphicon glyphicon-user"></span></div>
+                 <dt>Fecha de Nacimiento:</dt>
+                 <input name="bday" type="date" class="form-control" placeholder="Fecha de Nacimiento">
+                 </div>
+                 <span class="help-block" id="error"></span>
+            </div>
+
+            <div class="form-group">
+                 <div class="input-group">
+                 <div class="input-group-addon"><span class="glyphicon glyphicon-user"></span></div>
+                 <dt>Sexo:</dt>
+                 <input type="radio" name="gender" value="male" checked> Masculino<br>
+                 <input type="radio" name="gender" value="female"> Femenino<br>
+                 </div>
+                 <span class="help-block" id="error"></span>
+             </div>
+            
+             <div class="alert alert-danger" role="alert">
+                   <dt>Asegurese de registrar la información de dósis correcta!</dt> 
+            </div>
+            
+             <div class="form-group">
+                    <div class="input-group">
+                        <div class="input-group-addon"><span class="glyphicon glyphicon-user"></span></div>
+                        <dt>Fecha de dósis:</dt>
+                        <input name="fdos" type="date" class="form-control" placeholder="Fecha de dósis">
+                    </div>
+                    <span class="help-block" id="error"></span>
+               </div>
+               <div class="form-group">
+                <div class="input-group">
+                <div class="input-group-addon"><span class="glyphicon glyphicon-user"></span></div>
+                <input name="serial" type="text" class="form-control" placeholder="Troquel dosimetro">
+                </div>
+                <span class="help-block" id="error"></span>
+           </div>      
+           <div class="form-group">
+                <div class="input-group">
+                <div class="input-group-addon"><span class="glyphicon glyphicon-user"></span></div>
+                <input name="dosis" type="text" class="form-control" placeholder="Dósis">
+                </div>
+                <span class="help-block" id="error"></span>
+         </div>
+         <div class="form-group">
+                <label for="seltipo"><dt>Tipo de Radiación(Seleccione uno):</dt></label>
+                <select class="form-control" id="sel3" name="sellisttipo">
+                  <option>Equis(X)</option>
+                  <option>Gamma</option>
+                  <option>Neutrones</option>
+                </select>
+            </div>
+            <div class="form-group">
+                    <label for="seltipo"><dt>Resultado(Seleccione uno):</dt></label>
+                    <select class="form-control" id="sel3" name="sellisttipo">
+                      <option>z:Dosis no detectable</option>
+                      <option>q:Dosis en rango permisible </option>
+                      <option>w:Dosis en rango no permisible</option>
+                      <option>a:Dosis anual excedida</option>
+                    </select>
+                </div>
+             <div class="form-group">
+                 <label for="comment"><dt>Comentario:</dt></label>
+                 <textarea class="form-control" rows="3" id="comment"></textarea>
+               </div>
+             </div>
+                           
+                </div>
+                
+                <div class="form-footer">
+                     <button type="submit" class="btn btn-info">
+                        <span class="glyphicon glyphicon-log-in"></span> Actualizar
+                     </button>
+                     <!-- <button type="submit" class="btn btn-info">
+                        <span class="glyphicon glyphicon-log-in"></span> Dar de Baja
+                    </button> -->
+                     <a href="file:///C:/Users/jcpil/OneDrive/Escritorio/4geeksWayra/Proyecto1/cliente.html" class="btn btn-dark" role="button" >Retorno</a>
+                </div>
+    
+    
+                </form>
+
+            </div>
+               </div>
+    
+     </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>    
+</body>
+</html>

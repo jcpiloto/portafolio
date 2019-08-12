@@ -1,0 +1,22 @@
+.marco{background-color:lightslategray;height: 950px;padding: 20px;}
+.fondo{background-color:tan;height: 920px;padding: 20px;}
+.ingreso{background-color:royalblue;width: 350px;height: 408px;padding: 40px;}
+.area{height: 15px;}
+#foto1{width: 1200px;height: 276px;}
+.informa{background-color:grey;padding: 15px;}
+/* .centrarCaja {
+    position:relative;
+    left:40%;
+} */
+
+/* .centrarCaja{
+    position :relative !important; 
+    left: 80% !important;
+} */
+/* .fakeimg2 {width:100px;height:300px;}
+.fakeimg{display: block; 
+    width: 100%;
+    height: 100%;
+} */
+#foto2{width: 300px;height: 205px;}
+#foto3{width: 300px;height: 200px;}

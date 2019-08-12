@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/64706993c1.js"></script>
+    <title>Registro de Fuentes Radioactivas</title>
+</head>
+<body>
+
+    <div class="container fondo">
+
+        <div class="signup-form-container">
+        
+             <!-- form start -->
+             <form role="form" id="register-form" autocomplete="off">
+             
+             <div class="form-header">
+              <br>
+              <div class="container">
+                    <nav class="navbar navbar-expand-lg bg-success text-white">
+                      <a class="navbar-brand" href="#"></a>
+                      <h3 class="form-title"><i class="fas fa-radiation"></i> Registro de Fuentes Radioactivas</h3>
+                    </nav>
+              </div>
+                
+             <div class="pull-right"><h3 class="form-title"><span class="glyphicon glyphicon-pencil"></span></h3></div>
+                          
+             </div>
+             <div class="container">
+             <div class="form-body">
+                <div class="form-group">
+                    <div class="input-group">
+                    <div class="input-group-addon"><span class="glyphicon glyphicon-user"></span></div>
+                    <input name="serial" type="text" class="form-control" placeholder="Serial fuente">
+                    </div>
+                    <span class="help-block" id="error"></span>
+               </div>     
+
+               <div class="form-group">
+                    <label for="selmol"><dt>Modelo(Seleccione uno):</dt></label>
+                    <select class="form-control" id="sel1" name="sellistmol">
+                      <option>MB1215</option>
+                      <option>MT1213</option>
+                      <option>PB2028</option>
+                      <option>CD100100T</option>
+                      <option>CD100100D</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                       <div class="input-group">
+                       <div class="input-group-addon"><span class="glyphicon glyphicon-user"></span></div>
+                       <input name="marca" type="text" class="form-control" placeholder="Marca">
+                       </div>
+                       <span class="help-block" id="error"></span>
+                </div>
+                         
+                <div class="form-group">
+                        <label for="seluso"><dt>Uso(Seleccione uno):</dt></label>
+                        <select class="form-control" id="sel2" name="sellistuso">
+                          <option>Carga aérea</option>
+                          <option>Equipaje/Courier</option>
+                          <option>Container/Marítima</option>
+                          <option>Carga ligera/Punto control móvil</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                            <label for="seltipo"><dt>Tipo de fuente(Seleccione uno):</dt></label>
+                            <select class="form-control" id="sel3" name="sellisttipo">
+                              <option>Generador Rayos X</option>
+                              <option>Generador Rayos Gamma</option>
+                              <option>Generador de Neutrones</option>
+                            </select>
+                        </div>
+
+                <div class="form-group">
+                    <div class="input-group">
+                    <div class="input-group-addon"><span class="glyphicon glyphicon-user"></span></div>
+                    <dt>Fecha de fabricación:</dt>
+                    <input name="ffab" type="date" class="form-control" placeholder="Fecha de fabricación">
+                    </div>
+                    <span class="help-block" id="error"></span>
+               </div>
+
+               <div class="form-group">
+                    <label for="selmol"><dt>Ubicación(Seleccione uno):</dt></label>
+                    <select class="form-control" id="sel1" name="sellistmol">
+                      <option>Aduana La Guaira</option>
+                      <option>Aduana Aérea de Valencia</option>
+                      <option>Aduana Puerto Cabello</option>
+                      <option>Aduana San Antonio del Táchira</option>
+                      <option>Aduana Maracaibo</option>
+                      <option>Aduana Guanta-Puerto La Cruz</option>
+                      <option>Aduana Santa Elena de Uairen</option>
+                      <option>Aduana Aérea La Chinita</option>
+                      <option>Aduana Las Piedras-Paraguaná</option>
+                      <option>Aduana El Guamache</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="comment"><dt>Comentario:</dt></label>
+                    <textarea class="form-control" rows="4" id="comment"></textarea>
+                  </div>
+                </div>
+                
+                <div class="form-footer">
+                     <button type="submit" class="btn btn-info bg-success text-white">
+                     <span class="glyphicon glyphicon-log-in"></span> Registrar
+                     </button>
+                     <a href="file:///C:/Users/jcpil/OneDrive/Escritorio/4geeksWayra/Proyecto1/cliente.html" class="btn btn-dark" role="button" >Retorno</a>
+                </div>
+    
+    
+                </form>
+            </div>
+               </div>
+    
+     </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>    
+</body>
+</html>

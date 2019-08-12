@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/64706993c1.js"></script>
+    <title>Registro de TOE</title>
+</head>
+<body>
+
+    <div class="container fondo">
+
+        <div class="signup-form-container">
+        
+             <!-- form start -->
+             <form role="form" id="register-form" autocomplete="off">
+             
+             <div class="form-header">
+              <br>
+              <div class="container">
+                    <nav class="navbar navbar-expand-lg btn btn-info">
+                      <a class="navbar-brand" href="#"></a>
+                      <h3 class="form-title"><i class="fas fa-user-shield"></i> Registro de TOE</h3>
+                    </nav>
+              </div>
+                
+             <div class="pull-right"><h3 class="form-title"><span class="glyphicon glyphicon-pencil"></span></h3></div>
+                          
+             </div>
+             <div class="container">
+             <div class="form-body">
+                <div class="form-group">
+                    <div class="input-group">
+                    <div class="input-group-addon"><span class="glyphicon glyphicon-user"></span></div>
+                    <input name="cedula" type="number" class="form-control" placeholder="Cédula de Identidad">
+                    </div>
+                    <span class="help-block" id="error"></span>
+               </div>     
+
+                <div class="form-group">
+                       <div class="input-group">
+                       <div class="input-group-addon"><span class="glyphicon glyphicon-user"></span></div>
+                       <input name="name" type="text" class="form-control" placeholder="Nombre y Apellido">
+                       </div>
+                       <span class="help-block" id="error"></span>
+                </div>
+                          
+                <div class="form-group">
+                    <div class="input-group">
+                    <div class="input-group-addon"><span class="glyphicon glyphicon-user"></span></div>
+                    <dt>Fecha de Nacimiento:</dt>
+                    <input name="bday" type="date" class="form-control" placeholder="Fecha de Nacimiento">
+                    </div>
+                    <span class="help-block" id="error"></span>
+               </div>
+
+               <div class="form-group">
+                    <div class="input-group">
+                    <div class="input-group-addon"><span class="glyphicon glyphicon-user"></span></div>
+                    <dt>Sexo:</dt>
+                    <input type="radio" name="gender" value="male" checked> Masculino<br>
+                    <input type="radio" name="gender" value="female"> Femenino<br>
+                    </div>
+                    <span class="help-block" id="error"></span>
+                </div>
+  
+                <div class="form-group">
+                        <div class="input-group">
+                        <div class="input-group-addon"><span class="glyphicon glyphicon-user"></span></div>
+                        <input name="profe" type="text" class="form-control" placeholder="Profesión">
+                        </div>
+                        <span class="help-block" id="error"></span>
+                 </div>
+
+                 <div class="form-group">
+                        <div class="input-group">
+                        <div class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></div>
+                        <dt>Teléfono:</dt>
+                        <input type="tel" name="phone">
+                        <span>Formato: 0212-7094228/0416-6327788</span>
+                        </div> 
+                        <span class="help-block" id="error"></span>                     
+                   </div>
+
+                  <div class="form-group">
+                       <div class="input-group">
+                       <div class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></div>
+                       <input name="email" type="text" class="form-control" placeholder="Email">
+                       </div> 
+                       <span class="help-block" id="error"></span>                     
+                  </div>
+                  <div class="form-group">
+                    <label for="selmol"><dt>Ubicación(Seleccione uno):</dt></label>
+                    <select class="form-control" id="sel1" name="sellistmol">
+                      <option>Aduana La Guaira</option>
+                      <option>Aduana Aérea de Valencia</option>
+                      <option>Aduana Puerto Cabello</option>
+                      <option>Aduana San Antonio del Táchira</option>
+                      <option>Aduana Maracaibo</option>
+                      <option>Aduana Guanta-Puerto La Cruz</option>
+                      <option>Aduana Santa Elena de Uairen</option>
+                      <option>Aduana Aérea La Chinita</option>
+                      <option>Aduana Las Piedras-Paraguaná</option>
+                      <option>Aduana El Guamache</option>
+                    </select>
+                </div>
+                  <div class="form-group">
+                    <label for="sel1"><dt>Status del TOE(Seleccione uno):</dt></label>
+                    <select class="form-control" id="sel1" name="sellist1">
+                      <option>Activo</option>
+                      <option>Reposo</option>
+                      <option>Vacaciones</option>
+                      <option>Permiso</option>
+                      <option>Cesante</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <div class="input-group">
+                        <div class="input-group-addon"><span class="glyphicon glyphicon-user"></span></div><dt>Posee control médico:</dt> 
+                        <div class="container">
+                            <input type="radio" name="si" value="si" checked> Si
+                            <input type="radio" name="no" value="no"> No
+                        </div>
+                    </div>
+                    <span class="help-block" id="error"></span>
+                  </div>
+                
+                <div class="form-group">
+                        <div class="input-group">
+                        <div class="input-group-addon"><span class="glyphicon glyphicon-user"></span></div>
+                        <dt>Posee Capacitación en Seguridad Radiológica:</dt><br>
+                        <div class="container">
+                                <input type="radio" name="si" value="si" checked> Si (Seleccione)
+                                <input type="checkbox" name="toe" value="toe">Certificado TOE
+                                <input type="checkbox" name="osr" value="osr">Certificado OSR
+                        </div>
+                        <div class="container">
+                            <input type="radio" name="no" value="no"> No<br/>
+                        </div>
+                        
+                        </div>
+                        <span class="help-block" id="error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="comment"><dt>Comentario:</dt></label>
+                    <textarea class="form-control" rows="1" id="comment"></textarea>
+                  </div>
+                </div>
+                <div class="form-footer">
+                     <button type="submit" class="btn btn-info">
+                     <span class="glyphicon glyphicon-log-in"></span> Registrar
+                     </button>
+                     <a href="file:///C:/Users/jcpil/OneDrive/Escritorio/4geeksWayra/Proyecto1/cliente.html" class="btn btn-dark" role="button" >Retorno</a>
+                </div>
+                </form>
+            </div>
+               </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>    
+</body>
+</html>
